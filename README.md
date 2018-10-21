@@ -16,7 +16,7 @@
 
 CocoaReactComponentKit is [ReactComponentKit](https://github.com/ReactComponentKit/ReactComponentKit) for Cocoa, Mac OS X. CocoaReactComponentKit is a library for building NSViewControllers. You can make NSViewControllers based on Components. Also, It uses MVVM and Redux architectures for unidirectional data flow.
 
-<div align="center"><img src="https://raw.githubusercontent.com/ReactComponentKit/ReactComponentKit/master/art/CocoaReactComponentKit.png"></div>
+<div align="center"><img src="https://raw.githubusercontent.com/ReactComponentKit/CocoaReactComponentKit/master/art/CocoaReactComponentKit.png"></div>
 
 ## Data Flow
 
