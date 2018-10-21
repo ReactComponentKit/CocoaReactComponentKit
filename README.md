@@ -42,7 +42,10 @@ CocoaReactComponentKit provides four components basically.
 
 ## Examples
 
- * Making
+ ![](./art/simple_example.png)
+ 
+ * Above simple example shows how to use NSTableViewComponent and NSCollectionViewComponent. You can find the code at [here](https://github.com/ReactComponentKit/CocoaReactComponentKit/tree/master/CocoaReactComponentKitApp/CocoaReactComponentKitApp)
+ * I'm going to make more examples as soon as possible.
 
 ## How to install
 
