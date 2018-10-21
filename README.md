@@ -8,7 +8,7 @@
 	<img src="https://img.shields.io/badge/OSX-%3E%3D%2010.11-green.svg" />
 	<img src="https://img.shields.io/badge/Swift-%3E%3D%204.2-orange.svg" />
 	<img src="https://img.shields.io/cocoapods/v/CocoaReactComponentKit.svg" />
-	<img src="https://img.shields.io/github/license/CocoaReactComponentKit/CocoaReactComponentKit.svg" />
+	<img src="https://img.shields.io/github/license/ReactComponentKit/CocoaReactComponentKit.svg" />
 </div>
 
 
