@@ -32,7 +32,7 @@ CocoaReactComponentKit is [ReactComponentKit](https://github.com/ReactComponentK
 CocoaReactComponentKit provides four components basically. 
 
  * NSViewComponent
- 	* It is a basic component for making a scene. It is just a UIView that has some convenient methods for dispatching actions and receiving states.
+ 	* It is a basic component for making a scene. It is just a NSView that has some convenient methods for dispatching actions and receiving states.
  * NSCollectionViewComponent
  	* It is a component for making a scene that uses NSCollectionView.
  * NSTableViewComponent
