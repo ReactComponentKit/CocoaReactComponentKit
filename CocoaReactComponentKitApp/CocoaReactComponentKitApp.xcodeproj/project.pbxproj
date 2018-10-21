@@ -64,6 +64,7 @@
 		4EDF3F10217B8FD00067E74D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3F0F217B8FD00067E74D /* ViewModel.swift */; };
 		4EDF3F16217BA2CC0067E74D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3F15217BA2CC0067E74D /* WindowController.swift */; };
 		658C1CA0C385A0A22C0A8F2B /* Pods_CocoaReactComponentKitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2003274BE9040DDD75C732B3 /* Pods_CocoaReactComponentKitApp.framework */; };
+		F40B6CABF27FF16F2F154D5A /* Pods_CocoaReactComponentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB5E1A5FBF37E160C1884B /* Pods_CocoaReactComponentKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 				4EDF3EDA217B7D470067E74D /* BKRedux.framework in Frameworks */,
 				4EDF3EDC217B7D470067E74D /* RxCocoa.framework in Frameworks */,
 				4EDF3EDE217B7D470067E74D /* RxSwift.framework in Frameworks */,
+				F40B6CABF27FF16F2F154D5A /* Pods_CocoaReactComponentKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,7 +810,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.skyfe79.CocoaReactComponentKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -832,7 +834,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.skyfe79.CocoaReactComponentKitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
