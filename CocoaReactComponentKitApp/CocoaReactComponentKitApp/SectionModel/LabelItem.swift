@@ -24,6 +24,6 @@ struct LabelItem: ItemModel {
     }
     
     func contentSize(in view: NSView) -> CGSize {
-        return CGSize(width: view.bounds.width * 0.9, height: 50)
+        return CGSize(width: 100, height: 30)
     }
 }

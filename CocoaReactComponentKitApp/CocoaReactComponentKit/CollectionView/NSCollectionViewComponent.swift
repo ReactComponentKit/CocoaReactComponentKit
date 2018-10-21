@@ -30,7 +30,15 @@ open class NSCollectionViewComponent: NSViewComponent {
         }
     }
     
-    public let scrollViewCollectionView = NSScrollView()
+    public lazy var scrollView: NSScrollView = {
+        let scrollView = NSScrollView()
+        scrollView.autohidesScrollers = true
+        scrollView.borderType = .noBorder
+        scrollView.hasHorizontalScroller = true
+        scrollView.hasVerticalScroller = true
+        return scrollView
+    }()
+    
     public let collectionView: NSCollectionView
     
     public var collectionViewLayout: NSCollectionViewLayout? {
@@ -57,15 +65,15 @@ open class NSCollectionViewComponent: NSViewComponent {
     }
     
     open override func setupView() {
-        scrollViewCollectionView.documentView = collectionView
-        addSubview(scrollViewCollectionView)
-        scrollViewCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.documentView = collectionView
+        addSubview(scrollView)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            scrollViewCollectionView.topAnchor.constraint(equalTo: self.topAnchor),
-            scrollViewCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            scrollViewCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            scrollViewCollectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            scrollView.topAnchor.constraint(equalTo: self.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         ])
         collectionView.backgroundColors = [.clear]
     }

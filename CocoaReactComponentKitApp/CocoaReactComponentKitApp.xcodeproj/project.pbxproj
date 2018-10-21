@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E843F77217C7895002383BB /* NSTableViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F76217C7895002383BB /* NSTableViewComponent.swift */; };
+		4E843F79217C7EFE002383BB /* NSTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F78217C7EFE002383BB /* NSTableViewAdapter.swift */; };
+		4E843F7C217C87C6002383BB /* TableViewComponentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F7B217C87C6002383BB /* TableViewComponentItem.swift */; };
+		4E843F7E217C8D2A002383BB /* TableViewComponentItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E843F7D217C8D2A002383BB /* TableViewComponentItem.xib */; };
+		4E843F80217C8E0D002383BB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F7F217C8E0D002383BB /* TableViewController.swift */; };
+		4E843F83217CA263002383BB /* AddWordAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F82217CA263002383BB /* AddWordAction.swift */; };
+		4E843F86217CA33A002383BB /* LogActionToConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F85217CA33A002383BB /* LogActionToConsole.swift */; };
+		4E843F8A217CA3F5002383BB /* WordsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F89217CA3F5002383BB /* WordsReducer.swift */; };
+		4E843F8C217CA527002383BB /* MakeSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F8B217CA527002383BB /* MakeSectionModel.swift */; };
 		4EDF3E86217B6C510067E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3E85217B6C510067E74D /* AppDelegate.swift */; };
-		4EDF3E88217B6C510067E74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3E87217B6C510067E74D /* ViewController.swift */; };
+		4EDF3E88217B6C510067E74D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3E87217B6C510067E74D /* CollectionViewController.swift */; };
 		4EDF3E8A217B6C520067E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF3E89217B6C520067E74D /* Assets.xcassets */; };
 		4EDF3E8D217B6C520067E74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF3E8B217B6C520067E74D /* Main.storyboard */; };
 		4EDF3E9E217B6D120067E74D /* CocoaReactComponentKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDF3E9C217B6D120067E74D /* CocoaReactComponentKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -84,9 +93,18 @@
 /* Begin PBXFileReference section */
 		0FAB5E1A5FBF37E160C1884B /* Pods_CocoaReactComponentKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaReactComponentKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2003274BE9040DDD75C732B3 /* Pods_CocoaReactComponentKitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaReactComponentKitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E843F76217C7895002383BB /* NSTableViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableViewComponent.swift; sourceTree = "<group>"; };
+		4E843F78217C7EFE002383BB /* NSTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSTableViewAdapter.swift; sourceTree = "<group>"; };
+		4E843F7B217C87C6002383BB /* TableViewComponentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewComponentItem.swift; sourceTree = "<group>"; };
+		4E843F7D217C8D2A002383BB /* TableViewComponentItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewComponentItem.xib; sourceTree = "<group>"; };
+		4E843F7F217C8E0D002383BB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4E843F82217CA263002383BB /* AddWordAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordAction.swift; sourceTree = "<group>"; };
+		4E843F85217CA33A002383BB /* LogActionToConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogActionToConsole.swift; sourceTree = "<group>"; };
+		4E843F89217CA3F5002383BB /* WordsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsReducer.swift; sourceTree = "<group>"; };
+		4E843F8B217CA527002383BB /* MakeSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSectionModel.swift; sourceTree = "<group>"; };
 		4EDF3E82217B6C510067E74D /* CocoaReactComponentKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaReactComponentKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDF3E85217B6C510067E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EDF3E87217B6C510067E74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EDF3E87217B6C510067E74D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		4EDF3E89217B6C520067E74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDF3E8C217B6C520067E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EDF3E8E217B6C520067E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +200,49 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4E843F81217CA250002383BB /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				4E843F82217CA263002383BB /* AddWordAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		4E843F84217CA322002383BB /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				4E843F85217CA33A002383BB /* LogActionToConsole.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		4E843F87217CA378002383BB /* Postwares */ = {
+			isa = PBXGroup;
+			children = (
+				4E843F8B217CA527002383BB /* MakeSectionModel.swift */,
+			);
+			path = Postwares;
+			sourceTree = "<group>";
+		};
+		4E843F88217CA380002383BB /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				4E843F89217CA3F5002383BB /* WordsReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		4E86D15B217C0179008B59DB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4E843F7B217C87C6002383BB /* TableViewComponentItem.swift */,
+				4E843F7D217C8D2A002383BB /* TableViewComponentItem.xib */,
+				4E843F78217C7EFE002383BB /* NSTableViewAdapter.swift */,
+				4E843F76217C7895002383BB /* NSTableViewComponent.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		4EDF3E79217B6C510067E74D = {
 			isa = PBXGroup;
 			children = (
@@ -205,11 +266,16 @@
 		4EDF3E84217B6C510067E74D /* CocoaReactComponentKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E843F81217CA250002383BB /* Actions */,
+				4E843F84217CA322002383BB /* Middlewares */,
+				4E843F88217CA380002383BB /* Reducers */,
+				4E843F87217CA378002383BB /* Postwares */,
 				4EDF3F0C217B8F0C0067E74D /* SectionModel */,
 				4EDF3F09217B8E4B0067E74D /* Component */,
 				4EDF3E85217B6C510067E74D /* AppDelegate.swift */,
-				4EDF3E87217B6C510067E74D /* ViewController.swift */,
 				4EDF3F0F217B8FD00067E74D /* ViewModel.swift */,
+				4EDF3E87217B6C510067E74D /* CollectionViewController.swift */,
+				4E843F7F217C8E0D002383BB /* TableViewController.swift */,
 				4EDF3F15217BA2CC0067E74D /* WindowController.swift */,
 				4EDF3E89217B6C520067E74D /* Assets.xcassets */,
 				4EDF3E8B217B6C520067E74D /* Main.storyboard */,
@@ -227,6 +293,7 @@
 				4EDF3EBD217B6F080067E74D /* View */,
 				4EDF3EC5217B77280067E74D /* CollectionModels */,
 				4EDF3ED0217B78900067E74D /* CollectionView */,
+				4E86D15B217C0179008B59DB /* TableView */,
 				4EDF3E9C217B6D120067E74D /* CocoaReactComponentKit.h */,
 				4EDF3E9D217B6D120067E74D /* Info.plist */,
 				4EDF3EBB217B6ED80067E74D /* RootViewModelType.swift */,
@@ -442,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E843F7E217C8D2A002383BB /* TableViewComponentItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,11 +597,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E843F80217C8E0D002383BB /* TableViewController.swift in Sources */,
 				4EDF3F10217B8FD00067E74D /* ViewModel.swift in Sources */,
+				4E843F83217CA263002383BB /* AddWordAction.swift in Sources */,
 				4EDF3F16217BA2CC0067E74D /* WindowController.swift in Sources */,
+				4E843F8A217CA3F5002383BB /* WordsReducer.swift in Sources */,
 				4EDF3F0B217B8E5D0067E74D /* LabelComponent.swift in Sources */,
+				4E843F8C217CA527002383BB /* MakeSectionModel.swift in Sources */,
+				4E843F86217CA33A002383BB /* LogActionToConsole.swift in Sources */,
 				4EDF3F0E217B8F210067E74D /* LabelItem.swift in Sources */,
-				4EDF3E88217B6C510067E74D /* ViewController.swift in Sources */,
+				4EDF3E88217B6C510067E74D /* CollectionViewController.swift in Sources */,
 				4EDF3E86217B6C510067E74D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +619,7 @@
 				4EDF3EE6217B84050067E74D /* NSCollectionViewAdapter.swift in Sources */,
 				4EDF3ED2217B78AB0067E74D /* CollectionViewComponentltem.swift in Sources */,
 				4EDF3F02217B8AB40067E74D /* NestedBatchUpdate.swift in Sources */,
+				4E843F7C217C87C6002383BB /* TableViewComponentItem.swift in Sources */,
 				4EDF3F01217B8AB40067E74D /* Diff+AppKit.swift in Sources */,
 				4EDF3EFB217B8AB40067E74D /* ExtendedDiff.swift in Sources */,
 				4EDF3EE8217B846C0067E74D /* NSCollectionViewComponent.swift in Sources */,
@@ -560,6 +634,7 @@
 				4EDF3ED6217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift in Sources */,
 				4EDF3ECD217B77BF0067E74D /* SectionHeaderModel.swift in Sources */,
 				4EDF3EC4217B77060067E74D /* NSViewControllerComponent.swift in Sources */,
+				4E843F77217C7895002383BB /* NSTableViewComponent.swift in Sources */,
 				4EDF3EF9217B8AB40067E74D /* NestedExtendedDiff.swift in Sources */,
 				4EDF3EC2217B753F0067E74D /* NSViewController+Component.swift in Sources */,
 				4EDF3EFD217B8AB40067E74D /* Diff.swift in Sources */,
@@ -567,6 +642,7 @@
 				4EDF3EBF217B6F1C0067E74D /* NSViewComponent.swift in Sources */,
 				4EDF3EC9217B77810067E74D /* ItemModel.swift in Sources */,
 				4EDF3EC7217B77410067E74D /* SectionModel.swift in Sources */,
+				4E843F79217C7EFE002383BB /* NSTableViewAdapter.swift in Sources */,
 				4EDF3F00217B8AB40067E74D /* Patch.swift in Sources */,
 				4EDF3EE4217B83B70067E74D /* CollectionViewSectionFooterView.swift in Sources */,
 				4EDF3F03217B8AB40067E74D /* BatchUpdate.swift in Sources */,
@@ -650,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -706,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

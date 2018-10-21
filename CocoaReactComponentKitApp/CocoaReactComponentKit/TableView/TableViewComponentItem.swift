@@ -1,5 +1,5 @@
 //
-//  CollectionViewSectionFooterView.swift
+//  TableViewComponentItem.swift
 //  CocoaReactComponentKit
 //
 //  Created by burt on 2018. 10. 21..
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-internal class CollectionSectionFooterView: NSView, NSCollectionViewElement {
+internal class TableViewComponentItem: NSTableCellView {
     
     var rootComponentView: NSViewComponent? {
         didSet {
@@ -17,7 +17,13 @@ internal class CollectionSectionFooterView: NSView, NSCollectionViewElement {
             installRootComponentView()
         }
     }
-        
+    
+    static let TAG: Int = (Int.max - 1)
+    
+    override var tag: Int {
+        return TableViewComponentItem.TAG
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         rootComponentView?.prepareForReuse()
@@ -35,4 +41,3 @@ internal class CollectionSectionFooterView: NSView, NSCollectionViewElement {
         ])
     }
 }
-

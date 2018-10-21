@@ -14,13 +14,17 @@ class LabelComponent: NSViewComponent {
     
     lazy var label: NSTextField = {
         let textField = NSTextField()
-        textField.backgroundColor = NSColor.white
+        textField.backgroundColor = NSColor.clear
         textField.maximumNumberOfLines = 1
         textField.isBordered = false
         textField.isEditable = false
         textField.alignment = .center
         return textField
     }()
+    
+    override func prepareForReuse() {
+        label.stringValue = ""
+    }
     
     override func setupView() {
         addSubview(label)

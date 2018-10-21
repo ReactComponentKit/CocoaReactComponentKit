@@ -12,6 +12,11 @@ import Cocoa
 internal class CollectionViewComponentItem: NSCollectionViewItem {
     
     var rootComponentView: NSViewComponent?
+    var backgroundColor: NSColor = .white {
+        didSet {
+            self.view.layer?.backgroundColor = backgroundColor.cgColor
+        }
+    }
     
     override func loadView() {
         guard let rootComponentView = rootComponentView else { return }
