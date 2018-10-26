@@ -10,7 +10,7 @@ import Cocoa
 import BKEventBus
 import BKRedux
 
-open class UIViewControllerComponent: NSViewController, ReactComponent {
+open class NSViewControllerComponent: NSViewController, ReactComponent {
     
     public lazy var newStateEventBus: EventBus<ComponentNewStateEvent>? = {
         EventBus(token: self.token)
