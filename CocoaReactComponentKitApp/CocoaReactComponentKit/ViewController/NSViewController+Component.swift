@@ -14,6 +14,12 @@ extension NSViewController {
     public func add(viewController: NSViewController) -> NSViewController {
         addChild(viewController)
         view.addSubview(viewController.view)
+        NSLayoutConstraint.activate([
+            viewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            viewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            viewController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            viewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
         return viewController
     }
     
@@ -21,6 +27,12 @@ extension NSViewController {
     public func add(viewController: NSViewController, belowSubview: NSView) -> NSViewController {
         addChild(viewController)
         view.addSubview(viewController.view, positioned: .below, relativeTo: belowSubview)
+        NSLayoutConstraint.activate([
+            viewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            viewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            viewController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            viewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
         return viewController
     }
     
@@ -28,6 +40,12 @@ extension NSViewController {
     public func add(viewController: NSViewController, aboveSubview: NSView) -> NSViewController {
         addChild(viewController)
         view.addSubview(viewController.view, positioned: .below, relativeTo: aboveSubview)
+        NSLayoutConstraint.activate([
+            viewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            viewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            viewController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            viewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
         return viewController
     }
     
@@ -35,6 +53,12 @@ extension NSViewController {
     public func add(viewController: NSViewController, outOfSubview: NSView) -> NSViewController {
         addChild(viewController)
         view.addSubview(viewController.view, positioned: .out, relativeTo: outOfSubview)
+        NSLayoutConstraint.activate([
+            viewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            viewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            viewController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            viewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
         return viewController
     }
     

@@ -68,5 +68,4 @@ class TableViewController: NSViewController {
             })
             .disposed(by: disposeBag)
     }
-    
 }

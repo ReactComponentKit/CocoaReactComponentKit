@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CocoaReactComponentKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "CocoaReactComponentKit is ReactComponentKit for Cocoa, Mac OS X. It is a library for building NSViewController based on Components."
   s.homepage     = "https://github.com/ReactComponentKit/CocoaReactComponentKit"
   s.license      = "MIT"

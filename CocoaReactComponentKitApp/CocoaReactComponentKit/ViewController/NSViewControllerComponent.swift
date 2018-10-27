@@ -20,6 +20,8 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
         EventBus(token: self.token)
     }()
     
+    
+    
     public var token: Token
     
     public required init(token: Token, canOnlyDispatchAction: Bool = false) {
@@ -35,10 +37,17 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
         }
     }
     
+    open override func loadView() {
+        self.view = NSView()
+        self.view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.wantsLayer = true
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
+    }
+    
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+        
     private func applyNew(state: State) {
         on(state: state)
     }
