@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CocoaReactComponentKit"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "CocoaReactComponentKit is ReactComponentKit for Cocoa, Mac OS X. It is a library for building NSViewController based on Components."
   s.homepage     = "https://github.com/ReactComponentKit/CocoaReactComponentKit"
   s.license      = "MIT"
@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.swift_version         = "4.2"
   s.source       = { :git => "https://github.com/ReactComponentKit/CocoaReactComponentKit.git", :tag => "#{s.version}" }
   s.source_files  = "CocoaReactComponentKitApp/CocoaReactComponentKit/**/{*.swift}"
+  s.resource_bundles = { 
+    'CocoaReactComponentKit' => ['CocoaReactComponentKitApp/CocoaReactComponentKit/**/{*.xib}']
+  }
   s.requires_arc = true
   s.dependency "RxSwift", ">= 4.2.0"
   s.dependency "RxCocoa", ">= 4.2.0"
