@@ -21,6 +21,12 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     }()
     
     
+    private lazy var rootView: NSView = {
+        let view = NSView()
+        view.wantsLayer = true
+        view.layer?.backgroundColor = .white
+        return view
+    }()
     
     public var token: Token
     
@@ -38,10 +44,7 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     }
     
     open override func loadView() {
-        self.view = NSView()
-        self.view.translatesAutoresizingMaskIntoConstraints = false
-        self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.white.cgColor
+        self.view = rootView
     }
     
     public required init?(coder aDecoder: NSCoder) {
