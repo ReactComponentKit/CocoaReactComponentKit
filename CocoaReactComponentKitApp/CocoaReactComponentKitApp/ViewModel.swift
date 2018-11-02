@@ -32,7 +32,7 @@ class ViewModel: RootViewModelType<CollectionViewState> {
     override init() {
         super.init()
         store.set(
-            initailState: CollectionViewState(),
+            initialState: CollectionViewState(),
             middlewares: [
                 logActionToConsole
             ],
