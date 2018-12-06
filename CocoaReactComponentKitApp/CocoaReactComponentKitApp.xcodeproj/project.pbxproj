@@ -31,8 +31,6 @@
 		4EDF3EC7217B77410067E74D /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3EC6217B77410067E74D /* SectionModel.swift */; };
 		4EDF3EC9217B77810067E74D /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3EC8217B77810067E74D /* ItemModel.swift */; };
 		4EDF3ECB217B77A10067E74D /* NSViewComponentClassProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3ECA217B77A10067E74D /* NSViewComponentClassProvider.swift */; };
-		4EDF3ECD217B77BF0067E74D /* SectionHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3ECC217B77BF0067E74D /* SectionHeaderModel.swift */; };
-		4EDF3ECF217B77D60067E74D /* SectionFooterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3ECE217B77D60067E74D /* SectionFooterModel.swift */; };
 		4EDF3ED2217B78AB0067E74D /* CollectionViewComponentltem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3ED1217B78AB0067E74D /* CollectionViewComponentltem.swift */; };
 		4EDF3ED6217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3ED5217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift */; };
 		4EDF3ED8217B7D470067E74D /* BKEventBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EDF3ED7217B7D470067E74D /* BKEventBus.framework */; };
@@ -128,8 +126,6 @@
 		4EDF3EC6217B77410067E74D /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		4EDF3EC8217B77810067E74D /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		4EDF3ECA217B77A10067E74D /* NSViewComponentClassProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewComponentClassProvider.swift; sourceTree = "<group>"; };
-		4EDF3ECC217B77BF0067E74D /* SectionHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderModel.swift; sourceTree = "<group>"; };
-		4EDF3ECE217B77D60067E74D /* SectionFooterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooterModel.swift; sourceTree = "<group>"; };
 		4EDF3ED1217B78AB0067E74D /* CollectionViewComponentltem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewComponentltem.swift; sourceTree = "<group>"; };
 		4EDF3ED5217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCollectionViewItemLifeCycleProvider.swift; sourceTree = "<group>"; };
 		4EDF3ED7217B7D470067E74D /* BKEventBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BKEventBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,8 +322,6 @@
 			children = (
 				4EDF3EC6217B77410067E74D /* SectionModel.swift */,
 				4EDF3EC8217B77810067E74D /* ItemModel.swift */,
-				4EDF3ECC217B77BF0067E74D /* SectionHeaderModel.swift */,
-				4EDF3ECE217B77D60067E74D /* SectionFooterModel.swift */,
 				4EDF3ECA217B77A10067E74D /* NSViewComponentClassProvider.swift */,
 				4EDF3ED5217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift */,
 				4EDF3EE1217B82960067E74D /* NSCollectionViewSectionCollapseButtonProvider.swift */,
@@ -636,13 +630,11 @@
 				4EDF3EFF217B8AB40067E74D /* GenericPatch.swift in Sources */,
 				4EDF3F05217B8AB40067E74D /* Patch+Sort.swift in Sources */,
 				4EDF3ED6217B7D220067E74D /* NSCollectionViewItemLifeCycleProvider.swift in Sources */,
-				4EDF3ECD217B77BF0067E74D /* SectionHeaderModel.swift in Sources */,
 				4EDF3EC4217B77060067E74D /* NSViewControllerComponent.swift in Sources */,
 				4E843F77217C7895002383BB /* NSTableViewComponent.swift in Sources */,
 				4EDF3EF9217B8AB40067E74D /* NestedExtendedDiff.swift in Sources */,
 				4EDF3EC2217B753F0067E74D /* NSViewController+Component.swift in Sources */,
 				4EDF3EFD217B8AB40067E74D /* Diff.swift in Sources */,
-				4EDF3ECF217B77D60067E74D /* SectionFooterModel.swift in Sources */,
 				4EDF3EBF217B6F1C0067E74D /* NSViewComponent.swift in Sources */,
 				4EDF3EC9217B77810067E74D /* ItemModel.swift in Sources */,
 				4EDF3EC7217B77410067E74D /* SectionModel.swift in Sources */,
