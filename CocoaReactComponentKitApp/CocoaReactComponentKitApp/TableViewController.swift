@@ -56,7 +56,7 @@ class TableViewController: NSViewController {
         tableViewComponent.register(component: LabelComponent.self)
         tableViewComponent.adapter = adapter
         
-        addButton.rx.tap.map { AddWordAction() }.bind(to: viewModel.rx_action).disposed(by: disposeBag)
+        addButton.rx.tap.map { AddWordAction() }.bind(onNext: viewModel.dispatch).disposed(by: disposeBag)
         
         viewModel
             .output

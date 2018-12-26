@@ -12,18 +12,15 @@ import Foundation
 import BKRedux
 import RxSwift
 
-func wordsReducer<S>(name: StateKeyPath<S>, state: StateValue?) -> (Action) -> Observable<(StateKeyPath<S>, StateValue?)> {
-    return { (action) in
-        guard
-            let act = action as? AddWordAction,
-            let prevState = state as? [String]
-        else {
-            return .just((name, state))
-        }
-        
-        var mutableState = prevState
-        mutableState.append(act.word)
-        
-        return .just((name, mutableState))
+func wordsReducer(state: State, action: Action) -> Observable<State> {
+    guard
+        let act = action as? AddWordAction,
+        var mutableState = state as? CollectionViewState
+    else {
+        return .just(state)
     }
+    
+    mutableState.words.append(act.word)
+    
+    return .just(mutableState)
 }

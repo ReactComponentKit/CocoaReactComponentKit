@@ -25,7 +25,7 @@ open class RootViewModelType<S: State>: ViewModelType<S> {
         dispatchEventBus.on { [weak self] (event) in
             switch event {
             case let .dispatch(action):
-                self?.rx_action.accept(action)
+                self?.dispatch(action: action)
             }
         }
     }

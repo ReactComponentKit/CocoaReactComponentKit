@@ -58,7 +58,7 @@ class CollectionViewController: NSViewController {
         collectionViewComponent.register(component: LabelComponent.self)
         collectionViewComponent.adapter = adapter
         
-        addButton.rx.tap.map { AddWordAction() }.bind(to: viewModel.rx_action).disposed(by: disposeBag)
+        addButton.rx.tap.map { AddWordAction() }.bind(onNext: viewModel.dispatch).disposed(by: disposeBag)
         
         viewModel
             .output

@@ -37,7 +37,7 @@ class ViewModel: RootViewModelType<CollectionViewState> {
                 logActionToConsole
             ],
             reducers: [
-                StateKeyPath(\CollectionViewState.words) : wordsReducer
+                wordsReducer
             ],
             postwares: [
                makeSectionModel
