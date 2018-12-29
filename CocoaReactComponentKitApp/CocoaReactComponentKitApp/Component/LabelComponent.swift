@@ -33,8 +33,8 @@ class LabelComponent: NSViewComponent {
         }
     }
     
-    override func configure<Item>(item: Item) {
+    override func configure<Item>(item: Item, at indexPath: IndexPath) {
         guard let labelItem = item as? LabelItem else { return }
         label.stringValue = labelItem.text
-    }
+    }    
 }

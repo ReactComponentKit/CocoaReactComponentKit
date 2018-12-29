@@ -51,8 +51,9 @@ open class NSTableViewAdapter: NSObject, NSTableViewDelegate, NSTableViewDataSou
             ])
         }
         
+        let indexPath = IndexPath(item: row, section: 0)
         rootView?.prepareForReuse()
-        rootView?.applyNew(item: itemModel)
+        rootView?.applyNew(item: itemModel, at: indexPath)
         
         return view
     }

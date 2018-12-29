@@ -34,7 +34,7 @@ class CollectionViewController: NSViewController {
     }()
     
     private lazy var adapter: NSCollectionViewAdapter = {
-        let adapter = NSCollectionViewAdapter(collectionViewComponent: self.collectionViewComponent)
+        let adapter = NSCollectionViewAdapter(collectionViewComponent: self.collectionViewComponent, useDiff: true)
         let section = DefaultSectionModel(items: [])
         adapter.set(section: section)
         return adapter

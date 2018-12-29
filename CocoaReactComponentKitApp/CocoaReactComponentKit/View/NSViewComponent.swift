@@ -64,13 +64,13 @@ open class NSViewComponent: NSView, ReactComponent, ContentSizeProvider {
     }
     
     // It is only called when the component is in NSTableView's cell or NSCollectionView's cell
-    func applyNew<Item>(item: Item) {
-        configure(item: item)
+    func applyNew<Item>(item: Item, at indexPath: IndexPath) {
+        configure(item: item, at: indexPath)
         invalidateIntrinsicContentSize()
     }
     
     // Override it to configure or update views
-    open func configure<Item>(item: Item) {
+    open func configure<Item>(item: Item, at indexPath: IndexPath) {
         
     }
     
