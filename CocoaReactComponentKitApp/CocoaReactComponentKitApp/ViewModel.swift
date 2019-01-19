@@ -15,6 +15,7 @@ import CocoaReactComponentKit
 
 struct CollectionViewState: State {
     var words: [String] = []
+    var color: NSColor = .white
     var sections: [SectionModel] = []
     var error: (Error, Action)? = nil
 }
@@ -27,8 +28,6 @@ class ViewModel: RootViewModelType<CollectionViewState> {
     
     let output = Output()
     
-    
-    
     override init() {
         super.init()
         store.set(
@@ -37,7 +36,8 @@ class ViewModel: RootViewModelType<CollectionViewState> {
                 logActionToConsole
             ],
             reducers: [
-                wordsReducer
+                wordsReducer,
+                colorReducer
             ],
             postwares: [
                makeSectionModel
@@ -46,5 +46,6 @@ class ViewModel: RootViewModelType<CollectionViewState> {
     
     override func on(newState: CollectionViewState) {
         output.sections.accept(newState.sections)
+        propagate(state: newState)
     }
 }
