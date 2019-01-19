@@ -25,10 +25,10 @@ open class NSViewComponent: NSView, ReactComponent, ContentSizeProvider {
         return .zero
     }
         
-    public required init(token: Token, canOnlyDispatchAction: Bool = false) {
+    public required init(token: Token, receiveState: Bool = true) {
         self.token = token
         self.dispatchEventBus = EventBus(token: token)
-        if canOnlyDispatchAction == false {
+        if receiveState == true {
             self.newStateEventBus = EventBus(token: token)
         }
         super.init(frame: .zero)

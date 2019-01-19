@@ -12,14 +12,8 @@ import BKRedux
 
 open class NSViewControllerComponent: NSViewController, ReactComponent {
     
-    public lazy var newStateEventBus: EventBus<ComponentNewStateEvent>? = {
-        EventBus(token: self.token)
-    }()
-    
-    public lazy var dispatchEventBus: EventBus<ComponentDispatchEvent> = {
-        EventBus(token: self.token)
-    }()
-    
+    public var newStateEventBus: EventBus<ComponentNewStateEvent>?
+    public var dispatchEventBus: EventBus<ComponentDispatchEvent>
     
     private lazy var rootView: NSView = {
         let view = NSView()
@@ -30,10 +24,37 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     
     public var token: Token
     
-    public required init(token: Token, canOnlyDispatchAction: Bool = false) {
+    public required init(token: Token, receiveState: Bool = true) {
         self.token = token
+        dispatchEventBus = EventBus(token: token)
+        if receiveState == true {
+            newStateEventBus = EventBus(token: token)
+        }
         super.init(nibName: nil, bundle: nil)
-        
+        newStateEventBus?.on { [weak self] (event) in
+            guard let strongSelf = self else { return }
+            switch event {
+            case let .on(state):
+                strongSelf.applyNew(state: state)
+            }
+        }
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        self.token = Token.empty
+        dispatchEventBus = EventBus(token: Token.empty)
+        newStateEventBus = nil
+        super.init(coder: aDecoder)
+    }
+    
+    // Used for nib view controller
+    public func reset(token: Token, receiveState: Bool = true) {
+        guard token != Token.empty else { return }
+        self.token = token
+        self.dispatchEventBus = EventBus(token: token)
+        if receiveState == true {
+            self.newStateEventBus = EventBus(token: token)
+        }
         newStateEventBus?.on { [weak self] (event) in
             guard let strongSelf = self else { return }
             switch event {
@@ -47,10 +68,6 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
         self.view = rootView
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-        
     private func applyNew(state: State) {
         on(state: state)
     }

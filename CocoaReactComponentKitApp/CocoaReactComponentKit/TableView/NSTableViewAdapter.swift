@@ -38,7 +38,7 @@ open class NSTableViewAdapter: NSObject, NSTableViewDelegate, NSTableViewDataSou
                 rootView = rootComponentView
             }
         } else {
-            rootView = itemModel.componentClass.init(token: token, canOnlyDispatchAction: true)
+            rootView = itemModel.componentClass.init(token: token, receiveState: false)
             let componentItem = TableViewComponentItem()
             componentItem.rootComponentView = rootView
             componentItem.translatesAutoresizingMaskIntoConstraints = false
