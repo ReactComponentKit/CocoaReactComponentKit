@@ -15,6 +15,7 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     public var newStateEventBus: EventBus<ComponentNewStateEvent>?
     public var dispatchEventBus: EventBus<ComponentDispatchEvent>
     
+    private let usingRootView: Bool
     private lazy var rootView: NSView = {
         let view = NSView()
         view.wantsLayer = true
@@ -24,7 +25,12 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     
     public var token: Token
     
+    public static func viewControllerComponent(identifier: String, storyboard: NSStoryboard) -> NSViewControllerComponent {
+        return storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(identifier)) as! NSViewControllerComponent
+    }
+        
     public required init(token: Token, receiveState: Bool = true) {
+        self.usingRootView = true
         self.token = token
         dispatchEventBus = EventBus(token: token)
         if receiveState == true {
@@ -41,6 +47,7 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     }
     
     public required init?(coder aDecoder: NSCoder) {
+        self.usingRootView = false
         self.token = Token.empty
         dispatchEventBus = EventBus(token: Token.empty)
         newStateEventBus = nil
@@ -65,7 +72,11 @@ open class NSViewControllerComponent: NSViewController, ReactComponent {
     }
     
     open override func loadView() {
-        self.view = rootView
+        if usingRootView {
+            self.view = rootView
+        } else {
+            super.loadView()
+        }
     }
     
     private func applyNew(state: State) {

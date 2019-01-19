@@ -710,6 +710,7 @@
                         <splitViewItem id="66V-LR-f7c"/>
                         <splitViewItem id="WyK-JA-3CK"/>
                         <splitViewItem id="sdH-qJ-ams"/>
+                        <splitViewItem id="WX7-tS-WXq"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Puo-dJ-VhS">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -723,6 +724,7 @@
                         <segue destination="0Il-wo-30H" kind="relationship" relationship="splitItems" id="VbR-F3-IRF"/>
                         <segue destination="tt2-Kk-SbZ" kind="relationship" relationship="splitItems" id="5ei-4u-NEH"/>
                         <segue destination="aed-k0-rWv" kind="relationship" relationship="splitItems" id="Sjc-9E-cRG"/>
+                        <segue destination="bEl-1v-sol" kind="relationship" relationship="splitItems" id="gph-yc-uOs"/>
                     </connections>
                 </splitViewController>
                 <customObject id="ylu-Vt-rXh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -754,6 +756,31 @@
                 <customObject id="yj2-9V-BW7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-102" y="1340"/>
+        </scene>
+        <!--Loading Component-->
+        <scene sceneID="RAU-Na-k85">
+            <objects>
+                <viewController storyboardIdentifier="LoadingComponent" id="htI-ea-2vz" customClass="LoadingComponent" customModule="CocoaReactComponentKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="8j0-C0-0PM">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-26-LQK">
+                                <rect key="frame" x="209" y="134" width="32" height="32"/>
+                            </progressIndicator>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ann-26-LQK" firstAttribute="centerX" secondItem="8j0-C0-0PM" secondAttribute="centerX" id="ZGa-c5-pBL"/>
+                            <constraint firstItem="Ann-26-LQK" firstAttribute="centerY" secondItem="8j0-C0-0PM" secondAttribute="centerY" id="mx2-gC-uVS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="Ann-26-LQK" id="hAC-bJ-JXK"/>
+                    </connections>
+                </viewController>
+                <customObject id="2OH-dQ-VZe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="856"/>
         </scene>
         <!--Color View Controller-->
         <scene sceneID="Hdu-Rg-i4i">
@@ -793,6 +820,19 @@
                 <customObject id="YEN-2V-Bln" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="661" y="1340"/>
+        </scene>
+        <!--Storyboard View Controller-->
+        <scene sceneID="97m-kz-UbX">
+            <objects>
+                <viewController id="bEl-1v-sol" customClass="StoryboardViewController" customModule="CocoaReactComponentKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="dQG-Uj-hLh">
+                        <rect key="frame" x="0.0" y="0.0" width="230" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="4qE-L0-WUi" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="1342"/>
         </scene>
     </scenes>
 </document>
