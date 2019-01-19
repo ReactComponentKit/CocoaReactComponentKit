@@ -709,6 +709,7 @@
                     <splitViewItems>
                         <splitViewItem id="66V-LR-f7c"/>
                         <splitViewItem id="WyK-JA-3CK"/>
+                        <splitViewItem id="sdH-qJ-ams"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Puo-dJ-VhS">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -721,6 +722,7 @@
                         <outlet property="splitView" destination="Puo-dJ-VhS" id="C4e-Tn-Jau"/>
                         <segue destination="0Il-wo-30H" kind="relationship" relationship="splitItems" id="VbR-F3-IRF"/>
                         <segue destination="tt2-Kk-SbZ" kind="relationship" relationship="splitItems" id="5ei-4u-NEH"/>
+                        <segue destination="aed-k0-rWv" kind="relationship" relationship="splitItems" id="Sjc-9E-cRG"/>
                     </connections>
                 </splitViewController>
                 <customObject id="ylu-Vt-rXh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -752,6 +754,45 @@
                 <customObject id="yj2-9V-BW7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-102" y="1340"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="Hdu-Rg-i4i">
+            <objects>
+                <viewController id="aed-k0-rWv" customClass="ColorViewController" customModule="CocoaReactComponentKitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="KK8-3O-VOn">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oCa-iH-L5r">
+                                <rect key="frame" x="164" y="13" width="123" height="32"/>
+                                <buttonCell key="cell" type="push" title="Change Color" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nWd-pY-oKP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clickChangeColor:" target="aed-k0-rWv" id="3mQ-6X-xCZ"/>
+                                </connections>
+                            </button>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ma9-MV-E8V" customClass="ColorComponent" customModule="CocoaReactComponentKitApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="61" width="450" height="239"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oCa-iH-L5r" firstAttribute="top" secondItem="ma9-MV-E8V" secondAttribute="bottom" constant="20" id="4hU-Nd-wCd"/>
+                            <constraint firstAttribute="bottom" secondItem="oCa-iH-L5r" secondAttribute="bottom" constant="20" id="9Jd-27-rS4"/>
+                            <constraint firstAttribute="trailing" secondItem="ma9-MV-E8V" secondAttribute="trailing" id="ciG-8k-yvI"/>
+                            <constraint firstItem="oCa-iH-L5r" firstAttribute="centerX" secondItem="KK8-3O-VOn" secondAttribute="centerX" id="h6n-tN-b0P"/>
+                            <constraint firstItem="ma9-MV-E8V" firstAttribute="top" secondItem="KK8-3O-VOn" secondAttribute="top" id="rde-9f-fWU"/>
+                            <constraint firstItem="ma9-MV-E8V" firstAttribute="leading" secondItem="KK8-3O-VOn" secondAttribute="leading" id="wqz-Rn-qBB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorComponent" destination="ma9-MV-E8V" id="xQx-D0-eHB"/>
+                    </connections>
+                </viewController>
+                <customObject id="YEN-2V-Bln" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="1340"/>
         </scene>
     </scenes>
 </document>

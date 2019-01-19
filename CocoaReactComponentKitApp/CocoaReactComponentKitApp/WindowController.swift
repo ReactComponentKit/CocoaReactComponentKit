@@ -20,7 +20,7 @@ class WindowController: NSWindowController, NSWindowDelegate {
     override func windowDidLoad() {
         super.windowDidLoad()
     }
-
+                                                                                                                                                                 
     func windowDidResize(_ notification: Notification) {
         eventBus.post(event: .windowDidResize)
     }

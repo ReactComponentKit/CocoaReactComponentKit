@@ -61,6 +61,10 @@
 		4EDF3F0E217B8F210067E74D /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3F0D217B8F210067E74D /* LabelItem.swift */; };
 		4EDF3F10217B8FD00067E74D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3F0F217B8FD00067E74D /* ViewModel.swift */; };
 		4EDF3F16217BA2CC0067E74D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3F15217BA2CC0067E74D /* WindowController.swift */; };
+		4EE973DB21F328F2001039B7 /* ColorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE973DA21F328F2001039B7 /* ColorComponent.swift */; };
+		4EE973DD21F328FF001039B7 /* ColorComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EE973DC21F328FF001039B7 /* ColorComponent.xib */; };
+		4EE973DF21F32AB5001039B7 /* ColorReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE973DE21F32AB5001039B7 /* ColorReducer.swift */; };
+		4EE973E121F32BEE001039B7 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE973E021F32BEE001039B7 /* ColorViewController.swift */; };
 		658C1CA0C385A0A22C0A8F2B /* Pods_CocoaReactComponentKitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2003274BE9040DDD75C732B3 /* Pods_CocoaReactComponentKitApp.framework */; };
 		F40B6CABF27FF16F2F154D5A /* Pods_CocoaReactComponentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB5E1A5FBF37E160C1884B /* Pods_CocoaReactComponentKit.framework */; };
 /* End PBXBuildFile section */
@@ -156,6 +160,10 @@
 		4EDF3F0D217B8F210067E74D /* LabelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
 		4EDF3F0F217B8FD00067E74D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		4EDF3F15217BA2CC0067E74D /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		4EE973DA21F328F2001039B7 /* ColorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorComponent.swift; sourceTree = "<group>"; };
+		4EE973DC21F328FF001039B7 /* ColorComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorComponent.xib; sourceTree = "<group>"; };
+		4EE973DE21F32AB5001039B7 /* ColorReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorReducer.swift; sourceTree = "<group>"; };
+		4EE973E021F32BEE001039B7 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		944360D7132AE9BCBA5FF735 /* Pods-CocoaReactComponentKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaReactComponentKit.release.xcconfig"; path = "Target Support Files/Pods-CocoaReactComponentKit/Pods-CocoaReactComponentKit.release.xcconfig"; sourceTree = "<group>"; };
 		98399AD4F929037675784AA7 /* Pods-CocoaReactComponentKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaReactComponentKit.debug.xcconfig"; path = "Target Support Files/Pods-CocoaReactComponentKit/Pods-CocoaReactComponentKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C68C0D32B257FAA1FA6E3D4B /* Pods-CocoaReactComponentKitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaReactComponentKitApp.debug.xcconfig"; path = "Target Support Files/Pods-CocoaReactComponentKitApp/Pods-CocoaReactComponentKitApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				4E843F89217CA3F5002383BB /* WordsReducer.swift */,
+				4EE973DE21F32AB5001039B7 /* ColorReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 				4EDF3F0F217B8FD00067E74D /* ViewModel.swift */,
 				4EDF3E87217B6C510067E74D /* CollectionViewController.swift */,
 				4E843F7F217C8E0D002383BB /* TableViewController.swift */,
+				4EE973E021F32BEE001039B7 /* ColorViewController.swift */,
 				4EDF3F15217BA2CC0067E74D /* WindowController.swift */,
 				4EDF3E89217B6C520067E74D /* Assets.xcassets */,
 				4EDF3E8B217B6C520067E74D /* Main.storyboard */,
@@ -367,6 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				4EDF3F0A217B8E5D0067E74D /* LabelComponent.swift */,
+				4EE973DA21F328F2001039B7 /* ColorComponent.swift */,
+				4EE973DC21F328FF001039B7 /* ColorComponent.xib */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -496,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE973DD21F328FF001039B7 /* ColorComponent.xib in Resources */,
 				4EDF3E8A217B6C520067E74D /* Assets.xcassets in Resources */,
 				4EDF3E8D217B6C520067E74D /* Main.storyboard in Resources */,
 			);
@@ -599,9 +612,12 @@
 				4EDF3F10217B8FD00067E74D /* ViewModel.swift in Sources */,
 				4E843F83217CA263002383BB /* AddWordAction.swift in Sources */,
 				4EDF3F16217BA2CC0067E74D /* WindowController.swift in Sources */,
+				4EE973E121F32BEE001039B7 /* ColorViewController.swift in Sources */,
 				4E843F8A217CA3F5002383BB /* WordsReducer.swift in Sources */,
+				4EE973DB21F328F2001039B7 /* ColorComponent.swift in Sources */,
 				4EDF3F0B217B8E5D0067E74D /* LabelComponent.swift in Sources */,
 				4E843F8C217CA527002383BB /* MakeSectionModel.swift in Sources */,
+				4EE973DF21F32AB5001039B7 /* ColorReducer.swift in Sources */,
 				4E843F86217CA33A002383BB /* LogActionToConsole.swift in Sources */,
 				4EDF3F0E217B8F210067E74D /* LabelItem.swift in Sources */,
 				4EDF3E88217B6C510067E74D /* CollectionViewController.swift in Sources */,
