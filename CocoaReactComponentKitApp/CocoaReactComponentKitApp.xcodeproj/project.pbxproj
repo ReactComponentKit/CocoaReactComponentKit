@@ -16,6 +16,7 @@
 		4E843F86217CA33A002383BB /* LogActionToConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F85217CA33A002383BB /* LogActionToConsole.swift */; };
 		4E843F8A217CA3F5002383BB /* WordsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F89217CA3F5002383BB /* WordsReducer.swift */; };
 		4E843F8C217CA527002383BB /* MakeSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E843F8B217CA527002383BB /* MakeSectionModel.swift */; };
+		4ECD183F2209DAF1005FA347 /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD183E2209DAF1005FA347 /* ActionDispatcher.swift */; };
 		4EDF3E86217B6C510067E74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3E85217B6C510067E74D /* AppDelegate.swift */; };
 		4EDF3E88217B6C510067E74D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDF3E87217B6C510067E74D /* CollectionViewController.swift */; };
 		4EDF3E8A217B6C520067E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDF3E89217B6C520067E74D /* Assets.xcassets */; };
@@ -107,6 +108,7 @@
 		4E843F85217CA33A002383BB /* LogActionToConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogActionToConsole.swift; sourceTree = "<group>"; };
 		4E843F89217CA3F5002383BB /* WordsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsReducer.swift; sourceTree = "<group>"; };
 		4E843F8B217CA527002383BB /* MakeSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSectionModel.swift; sourceTree = "<group>"; };
+		4ECD183E2209DAF1005FA347 /* ActionDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
 		4EDF3E82217B6C510067E74D /* CocoaReactComponentKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaReactComponentKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EDF3E85217B6C510067E74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EDF3E87217B6C510067E74D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,14 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		4ECD183D2209DAB4005FA347 /* ActionDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				4ECD183E2209DAF1005FA347 /* ActionDispatcher.swift */,
+			);
+			path = ActionDispatcher;
+			sourceTree = "<group>";
+		};
 		4EDF3E79217B6C510067E74D = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +311,7 @@
 		4EDF3E9B217B6D120067E74D /* CocoaReactComponentKit */ = {
 			isa = PBXGroup;
 			children = (
+				4ECD183D2209DAB4005FA347 /* ActionDispatcher */,
 				4EDF3EE9217B8AB40067E74D /* Differ */,
 				4EDF3EC0217B751B0067E74D /* ViewController */,
 				4EDF3EBD217B6F080067E74D /* View */,
@@ -657,6 +668,7 @@
 				4EDF3EC4217B77060067E74D /* NSViewControllerComponent.swift in Sources */,
 				4E843F77217C7895002383BB /* NSTableViewComponent.swift in Sources */,
 				4EDF3EF9217B8AB40067E74D /* NestedExtendedDiff.swift in Sources */,
+				4ECD183F2209DAF1005FA347 /* ActionDispatcher.swift in Sources */,
 				4EDF3EC2217B753F0067E74D /* NSViewController+Component.swift in Sources */,
 				4EDF3EFD217B8AB40067E74D /* Diff.swift in Sources */,
 				4EDF3EBF217B6F1C0067E74D /* NSViewComponent.swift in Sources */,
