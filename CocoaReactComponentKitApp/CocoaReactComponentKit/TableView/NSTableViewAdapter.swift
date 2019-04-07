@@ -77,8 +77,10 @@ open class NSTableViewAdapter: NSObject, NSTableViewDelegate, NSTableViewDataSou
             let newHashable = section.items.map { $0.id }
             
             let changes = oldHashable.extendedDiff(newHashable)
-            self.section = section
-            self.tableViewComponent?.tableView.apply(changes)
+            if changes.isEmpty == false {
+                self.section = section
+                self.tableViewComponent?.tableView.apply(changes)
+            }
         }
     }
 }
