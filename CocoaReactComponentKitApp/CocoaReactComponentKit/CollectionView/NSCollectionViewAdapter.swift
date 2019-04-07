@@ -143,8 +143,10 @@ open class NSCollectionViewAdapter: NSObject, NSCollectionViewDataSource, NSColl
                     let newHashable = newSection.items.map { $0.id }
                     
                     let changes = oldHashable.extendedDiff(newHashable)
-                    self.sections[section] = newSection
-                    self.collectionViewComponent?.collectionView.apply(changes)
+                    if changes.isEmpty == false {
+                        self.sections[section] = newSection
+                        self.collectionViewComponent?.collectionView.apply(changes)
+                    }
                     section += 1
                 }
             }
