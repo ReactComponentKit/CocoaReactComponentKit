@@ -13,20 +13,16 @@ import BKRedux
 import BKEventBus
 import CocoaReactComponentKit
 
-struct CollectionViewState: State {
+struct CollectionViewState: State, ColorComponentState {
     var words: [String] = []
     var color: NSColor = .white
-    var sections: [SectionModel] = []
+    var sections: [DefaultSectionModel] = []
     var error: (Error, Action)? = nil
 }
 
 class ViewModel: RootViewModelType<CollectionViewState> {
-    
-    struct Output {
-        let sections =  BehaviorRelay<[SectionModel]>(value: [])
-    }
-    
-    let output = Output()
+
+    let sections = Output<[DefaultSectionModel]>(value: [])
     
     override init() {
         super.init()
@@ -45,7 +41,7 @@ class ViewModel: RootViewModelType<CollectionViewState> {
     }
     
     override func on(newState: CollectionViewState) {
-        output.sections.accept(newState.sections)
+        sections.accept(newState.sections)
         propagate(state: newState)
     }
 }

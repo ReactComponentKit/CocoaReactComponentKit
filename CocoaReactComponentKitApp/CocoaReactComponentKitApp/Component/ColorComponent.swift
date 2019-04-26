@@ -10,6 +10,10 @@ import Cocoa
 import CocoaReactComponentKit
 import BKRedux
 
+protocol ColorComponentState {
+    var color: NSColor { get }
+}
+
 class ColorComponent: NSViewComponent {
     
     @IBOutlet weak var colorA: NSView!
@@ -23,7 +27,7 @@ class ColorComponent: NSViewComponent {
     }
     
     override func on(state: State) {
-        guard let state = state as? CollectionViewState else { return }
+        guard let state = state as? ColorComponentState else { return }
         colorA.layer?.backgroundColor = state.color.withAlphaComponent(0.7).cgColor
         colorB.layer?.backgroundColor = state.color.withAlphaComponent(0.4).cgColor
         colorC.layer?.backgroundColor = state.color.withAlphaComponent(0.1).cgColor

@@ -61,7 +61,6 @@ class CollectionViewController: NSViewController {
         addButton.rx.tap.map { AddWordAction() }.bind(onNext: viewModel.dispatch).disposed(by: disposeBag)
         
         viewModel
-            .output
             .sections
             .asDriver()
             .drive(onNext: { [weak self] (sectionModelList) in
