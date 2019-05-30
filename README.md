@@ -1,5 +1,3 @@
-# CocoaReactComponentKit
-
 <div align="center">
 	<img src="https://raw.githubusercontent.com/ReactComponentKit/ReactComponentKit/master/art/logo.png">
 </div>
